@@ -193,8 +193,7 @@ jupyter notebook
 
 ## 👨‍💻 Autor
 
-Marcelo Viana de Araujo
-Analista de Sistemas | Desenvolvedor Fullstack
+Equipe do Tech Challenge
 
 ---
 
