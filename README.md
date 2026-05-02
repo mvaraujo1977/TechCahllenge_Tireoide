@@ -137,10 +137,10 @@ Outras métricas analisadas:
 
 | Modelo              | F1-Score |
 | ------------------- | -------- |
-| Regressão Logística | X.XX     |
-| Random Forest       | X.XX     |
+| Regressão Logística | 0.991     |
+| Random Forest       | 0.995     |
 
-👉 Melhor modelo: **[INSERIR RESULTADO]**
+👉 Melhor modelo: **[RANDOM FOREST]**
 
 ---
 
