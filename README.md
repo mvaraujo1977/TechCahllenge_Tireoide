@@ -10,13 +10,21 @@ A solução utiliza dados estruturados, técnicas de análise exploratória, pip
 
 ## Dataset
 
-O dataset utilizado está disponível na pasta `dataset/`:
+O dataset tabular utilizado tem origem no repositório público **UCI Machine Learning Repository**, no conjunto **Thyroid Disease**:
+
+[Thyroid Disease - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/102/thyroid+disease)
+
+No repositório original, os dados são disponibilizados em arquivos separados, incluindo um arquivo com os registros e outro com a descrição dos atributos. Neste projeto, esses arquivos foram organizados e consolidados para facilitar a etapa de modelagem.
+
+Os arquivos utilizados estão disponíveis na pasta `dataset/`:
 
 - `hypothyroid.data`: arquivo original com os registros.
 - `hypothyroid.names`: identificação das colunas.
 - `hypothyroid_final.csv`: base consolidada usada no notebook.
 
 No Google Colab, o notebook baixa automaticamente o arquivo `hypothyroid_final.csv` diretamente do GitHub.
+
+O arquivo `model_tireoide.ipynb`, localizado na raiz do repositório, foi usado como notebook inicial de apoio para juntar, organizar e gerar a versão consolidada `hypothyroid_final.csv` a partir dos arquivos originais separados. A análise final, a modelagem e a avaliação oficial do projeto estão concentradas no notebook `notebooks/01_classificacao_tireoide.ipynb`.
 
 ## Estrutura do Projeto
 
@@ -30,8 +38,13 @@ No Google Colab, o notebook baixa automaticamente o arquivo `hypothyroid_final.c
 │   └── modelo_classificacao_tireoide.pkl
 ├── notebooks/
 │   └── 01_classificacao_tireoide.ipynb
+├── extra/
+│   ├── 02_visao_computacional_mri_cancer.ipynb
+│   ├── README.md
+│   └── models/
 ├── reports/
 │   └── figures/
+├── model_tireoide.ipynb
 ├── Dockerfile
 ├── README.md
 └── requirements.txt
@@ -94,6 +107,23 @@ As variáveis com maior influência por importância de permutação foram:
 - TT4
 - age
 - on_thyroxine
+
+## Parte Extra - Visão Computacional
+
+Além da etapa principal com dados tabulares, o repositório contém uma parte extra dedicada à Visão Computacional em imagens de ressonância magnética cerebral:
+
+```text
+extra/
+├── 02_visao_computacional_mri_cancer.ipynb
+├── README.md
+└── models/
+```
+
+Essa etapa utiliza o dataset público **Brain Cancer MRI Dataset**, baixado diretamente do Kaggle com `kagglehub`, e compara uma CNN simples com um modelo MobileNetV2 usando Transfer Learning e fine-tuning. Também inclui análise exploratória das imagens, Grad-CAM para interpretação visual e discussão sobre as limitações de detecção/segmentação, já que o dataset não possui bounding boxes ou máscaras.
+
+Os resultados, instruções de execução e limitações da etapa extra estão documentados em `extra/README.md`.
+
+Observação sobre os modelos da parte extra: quando o notebook é executado no Google Colab, os arquivos `.keras` são salvos na pasta `models/` do ambiente de execução. No repositório, para manter a organização da entrega, os modelos treinados da parte extra foram armazenados em `extra/models/`.
 
 ## Observações Éticas
 
