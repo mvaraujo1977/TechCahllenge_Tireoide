@@ -12,4 +12,3 @@ opencv-python
 Pillow
 tensorflow
 tqdm
-ultralytics

@@ -3,7 +3,6 @@
 # Dados e artefatos gerados na parte extra de Visão Computacional
 extra/data/
 data/raw/brain_cancer_mri/
-models/yolo/
 
 # Caches locais
 __pycache__/
