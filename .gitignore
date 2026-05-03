@@ -1,0 +1,9 @@
+
+
+# Dados e artefatos gerados na parte extra de Visão Computacional
+extra/data/
+data/raw/brain_cancer_mri/
+
+# Caches locais
+__pycache__/
+.ipynb_checkpoints/
