@@ -52,6 +52,18 @@ Os objetivos principais do projeto são:
 └── requirements.txt
 ```
 
+## Acessos Diretos
+
+- Notebook principal: [01_classificacao_tireoide.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/notebooks/01_classificacao_tireoide.ipynb)
+- Notebook auxiliar de preparação dos dados tabulares: [model_tireoide.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/model_tireoide.ipynb)
+- Notebook extra de Visão Computacional: [02_visao_computacional_mri_cancer.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/extra/02_visao_computacional_mri_cancer.ipynb)
+- README da parte extra: [extra/README.md](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/extra/README.md)
+- Dockerfile: [Dockerfile](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/Dockerfile)
+- Dependências: [requirements.txt](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/requirements.txt)
+- Dataset consolidado tabular: [hypothyroid_final.csv](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/dataset/hypothyroid_final.csv)
+- Modelo tabular salvo: [modelo_classificacao_tireoide.pkl](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/models/modelo_classificacao_tireoide.pkl)
+- Melhor modelo de imagem salvo: [best_image_classifier.keras](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/extra/models/best_image_classifier.keras)
+
 ## Dataset Tabular
 
 O dataset principal foi retirado do **UCI Machine Learning Repository**, no conjunto **Thyroid Disease**:
@@ -66,9 +78,7 @@ No repositório original, os dados são disponibilizados em arquivos separados. 
 
 O arquivo `model_tireoide.ipynb`, localizado na raiz do repositório, foi usado apenas como etapa inicial de apoio para organizar os arquivos originais e gerar a base consolidada `hypothyroid_final.csv`. A análise final, os modelos, as avaliações e o relatório técnico da parte principal estão no notebook:
 
-```text
-notebooks/01_classificacao_tireoide.ipynb
-```
+[notebooks/01_classificacao_tireoide.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/notebooks/01_classificacao_tireoide.ipynb)
 
 ## Parte Principal - Classificação de Hipotireoidismo
 
@@ -148,9 +158,7 @@ A interpretação visual é feita com Grad-CAM. Essa técnica destaca regiões q
 
 Os detalhes da parte extra estão documentados em:
 
-```text
-extra/README.md
-```
+[extra/README.md](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/extra/README.md)
 
 ### Observação Sobre os Modelos da Parte Extra
 
@@ -166,7 +174,7 @@ A execução recomendada é pelo Google Colab, especialmente para a parte de Vis
 
 ### Parte Tabular
 
-1. Abra `notebooks/01_classificacao_tireoide.ipynb` no Google Colab.
+1. Abra [notebooks/01_classificacao_tireoide.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/notebooks/01_classificacao_tireoide.ipynb) no Google Colab.
 2. Execute a célula opcional de instalação de dependências, se necessário.
 3. Execute as células em ordem.
 4. O dataset tabular será baixado automaticamente do GitHub para o ambiente do Colab.
@@ -174,7 +182,7 @@ A execução recomendada é pelo Google Colab, especialmente para a parte de Vis
 
 ### Parte Extra
 
-1. Abra `extra/02_visao_computacional_mri_cancer.ipynb` no Google Colab.
+1. Abra [extra/02_visao_computacional_mri_cancer.ipynb](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/extra/02_visao_computacional_mri_cancer.ipynb) no Google Colab.
 2. Verifique se a GPU está habilitada.
 3. Execute a célula de instalação de dependências, se necessário.
 4. Execute o download do dataset com `kagglehub`.
@@ -234,9 +242,7 @@ As principais bibliotecas utilizadas são:
 
 As dependências completas estão em:
 
-```text
-requirements.txt
-```
+[requirements.txt](https://github.com/mvaraujo1977/TechCahllenge_Tireoide/blob/Nirton_Afonso/requirements.txt)
 
 ## Artefatos Gerados
 
@@ -303,4 +309,3 @@ Este repositório contém:
 - relatórios finais dentro dos notebooks.
 
 Além do repositório, o Tech Challenge solicita a entrega de um PDF final com o link do Git, resultados, prints/gráficos e relatório técnico, além de um vídeo demonstrativo de até 15 minutos.
-
