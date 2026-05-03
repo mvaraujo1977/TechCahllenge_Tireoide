@@ -8,7 +8,7 @@ O objetivo é construir um fluxo experimental para classificação de imagens m�
 
 O notebook realiza:
 
-- Download do dataset via API do Kaggle.
+- Download do dataset via KaggleHub.
 - Inspeção automática da estrutura real dos arquivos.
 - Análise exploratória das imagens.
 - Preparação dos dados com resize, normalização, divisão treino/validação/teste e data augmentation.
@@ -34,7 +34,7 @@ O dataset utilizado é:
 
 [Brain Cancer MRI Dataset - Kaggle](https://www.kaggle.com/datasets/orvile/brain-cancer-mri-dataset)
 
-O notebook baixa o dataset diretamente pela API do Kaggle e extrai os arquivos em:
+O notebook baixa o dataset diretamente com `kagglehub.dataset_download` e organiza os arquivos em:
 
 ```text
 data/raw/brain_cancer_mri/
@@ -44,7 +44,7 @@ data/raw/brain_cancer_mri/
 
 1. Abra o notebook `extra/02_visao_computacional_mri_cancer.ipynb` no Google Colab.
 2. Execute a célula de instalação de dependências, se necessário.
-3. Configure o arquivo `kaggle.json` quando solicitado.
+3. Execute a célula de download com `kagglehub`.
 4. Execute as células em ordem.
 5. O notebook irá baixar, extrair, inspecionar e preparar automaticamente o dataset.
 

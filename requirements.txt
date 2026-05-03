@@ -7,7 +7,7 @@ joblib
 shap
 jupyter
 notebook
-kaggle
+kagglehub
 opencv-python
 Pillow
 tensorflow
